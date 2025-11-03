@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog - IL Heavy Group</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .category-section {
+            margin: 4rem 0;
+        }
+        .category-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 1rem;
+            border-bottom: 3px solid var(--primary-color);
+        }
+        .category-header h2 {
+            color: var(--secondary-color);
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .category-header p {
+            color: var(--gray);
+            font-size: 1.1rem;
+        }
+        .products-grid-compact {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .product-card-compact {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .product-card-compact:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+        .product-image-compact {
+            height: 200px;
+            overflow: hidden;
+            background: #f0f0f0;
+        }
+        .product-image-compact img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .product-content-compact {
+            padding: 1.5rem;
+        }
+        .product-content-compact h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: var(--secondary-color);
+        }
+        .product-content-compact p {
+            color: var(--gray);
+            font-size: 0.9rem;
+            line-height: 1.5;
+            margin-bottom: 1rem;
+        }
+        .specs-grid-compact {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.5rem;
+            margin: 1rem 0;
+            font-size: 0.85rem;
+        }
+        .spec-item-compact {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.25rem 0;
+        }
+        .spec-label-compact {
+            font-weight: 600;
+            color: var(--secondary-color);
+        }
+        .spec-value-compact {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <img src="logo.png" alt="IL Heavy Group Logo">
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="catalog.html" class="active">Catalog</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Catalog Header -->
+    <section class="catalog-header">
+        <div class="container">
+            <h1>Equipment Catalog</h1>
+            <p>Browse our complete selection of premium Bobcat equipment</p>
+        </div>
+    </section>
+
+    <!-- Catalog Content -->
+    <section style="padding: 3rem 0;">
+        <div class="container">
+            
+            <!-- CATEGORY 1: COMPACT TRACK LOADERS -->
+            <div class="category-section" id="loaders">
+                <div class="category-header">
+                    <h2>Compact Track Loaders</h2>
+                    <p>Powerful, versatile loaders for construction and landscaping</p>
+                </div>
+                
+                <div class="products-grid-compact">
+                    <!-- T450 -->
+                    <div class="product-card-compact">
+                        <div class="product-image-compact">
+                            <img src="https://via.placeholder.com/400x300/1a1a1a/c41e3a?text=Bobcat+T450" alt="Bobcat T450">
+                        </div>
+                        <div class="product-content-compact">
+                            <h3>Bobcat T450</h3>
+                            <p>Compact and nimble loader perfect for tight spaces with exceptional maneuverability and 55 HP power.</p>
+                            <div class="specs-grid-compact">
+                                <div class="spec-item-compact">
+                                    <span class="spec-label-compact">Power:</span>
+                                    <span class="spec-value-compact">55 HP</span>
+                                </div>
+                                <div class="spec-item-compact">
+                                    <span class="spec-label-compact">Capacity:</span>
+                                    <span class="spec-value-compact">1,490 lbs</span>
+                                </div>
+                            </div>
+                            <a href="contact.html?product=T450" class="btn btn-primary" style="width: 100%; text-align: center;">Request Quote</a>
+                        </div>
+                    </div>
+
+                    <!-- T590 -->
+                    <div class="product-card-compact">
+                        <div class="product-image-compact">
+                            <img src="https://via.placeholder.com/400x300/1a1a1a/c41e3a?text=Bobcat+T590" alt="Bobcat T590">
+                        </div>
+                        <div class="product-content-compact">
+                            <h3>Bobcat T590</h3>
+                            <p>High performance in compact package. Ideal for rough conditions with 61 HP turbocharged engine.</p>
+                            <div class="specs-grid-compact">
+                                <div class="spec-item-compact">
+                                    <span class="spec-label-compact">Power:</span>
+                                    <span class="spec-value-compact">61 HP</span>
+                                </div>
+                                <div class="spec-item-compact">
+                                    <span class="spec-label-compact">Capacity:</span>
+                                    <span class="spec-value-compact">2,110 lbs</span>
+                                </div>
+                            </div>
+                            <a href="contact.html?product=T590" class="btn btn-primary" style="width: 100%; text-align: center;">Request Quote</a>
+                        </div>
+                    </div>
+
+                    <!-- T770 -->
+                    <div class="product-card-compact">
+                        <div class="product-image-compact">
+                            <img src="https://via.placeholder.com/400x300/1a1a1a/c41e3a?text=Bobcat+T770" alt="Bobcat T770">
+                        </div>
+                        <div class="product-content-compact">
+                            <h3>Bobcat T770</h3>
+                            <p>Premium heavy-duty loader with 92 HP. Ultimate attachment carrier for demanding jobs.</p>
+                            <div class="specs-grid-compact">
+                                <div class="spec-item-compact">
+                                    <span class="spec-label-compact">Power:</span>
+                                    <span class="spec-value-compact">92 HP</span>
+                                </div>
+                                <div class="spec-item-compact">
+                                    <span class="spec-label-compact">Capacity:</span>
+                                    <span class="spec-value-compact">3,475 lbs</span>
+                                </div>
+                            </div>
+                            <a href="contact.html?product=T770" class="btn btn-primary" style="width: 100%; text-align: center;">Request Quote</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CATEGORY 2: PORTABLE AIR COMPRESSORS -->
+            <div class="category-section" id="air-compressors">
+                <div class="category-header">
+                    <h2>Portable Air Compressors</h2>
+                    <p>Reliable air power for construction and industrial applications</p>
+                </div>
+                
+                <div class="products-grid-compact">
+                    <!-- PA450VP -->
+                    <div class="product-card-compact">
+                        <div class="product-image-compact">
+                            <img src="https://via.placeholder.com/400x300/1a1a1a/c41e3a?text=Bobcat+PA450VP" alt="Bobcat PA450VP">
+                        </div>
+                        <div class="product-content-compact">
+                            <h3>Bobcat PA450VP</h3>
+                            <p>Dual pressure portable air compressor with 450 CFM. Perfect for versatile jobsite applications.</p>
+                            <div class="specs-grid-compact">
+                                <div class="spec-item-compact">
+                                    <span class="spec-label-compact">CFM:</span>
+                                    <span class="spec-value-compact">450/400</span>
+                                </div>
+                                <div class="spec-item-compact">
+                                    <span class="spec-label-compact">PSI:</span>
+                                    <span class="spec-value-compact">150/200</span>
+                                </div>
+                            </div>
+                            <a href="contact.html?product=PA450VP" class="btn btn-primary" style="width: 100%; text-align: center;">Request Quote</a>
+                        </div>
+                    </div>
+
+                    <!-- PA425V -->
+                    <div class="product-card-compact">
+                        <div class="product-image-compact">
+                            <img src="https://via.placeholder.com/400x300/1a1a1a/c41e3a?text=Bobcat+PA425V" alt="Bobcat PA425V">
+                        </div>
+                        <div class="product-content-compact">
+                            <h3>Bobcat PA425V</h3>
+                            <p>Reliable 425 CFM compressor with Tier 4 Final Cummins engine for dependable air power.</p>
+                            <div class="specs-grid-compact">
+                                <div class="spec-item-compact">
+                                    <span class="spec-label-compact">CFM:</span>
+                                    <span class="spec-value-compact">425</span>
+                                </div>
+                                <div class="spec-item-compact">
+                                    <span class="spec-label-compact">Engine:</span>
+                                    <span class="spec-value-compact">Cummins T4</span>
+                                </div>
+                            </div>
+                            <a href="contact.html?product=PA425V" class="btn btn-primary" style="width: 100%; text-align: center;">Request Quote</a>
+                        </div>
+                    </div>
+
+                    <!-- PA1170P -->
+                    <div class="product-card-compact">
+                        <div class="product-image-compact">
+                            <img src="https://via.placeholder.com/400x300/1a1a1a/c41e3a?text=Bobcat+PA1170P" alt="Bobcat PA1170P">
+                        </div>
+                        <div class="product-content-compact">
+                            <h3>Bobcat PA1170P</h3>
+                            <p>High-capacity 1170 CFM compressor for large-scale operations and demanding applications.</p>
+                            <div class="specs-grid-compact">
+                                <div class="spec-item-compact">
+                                    <span class="spec-label-compact">CFM:</span>
+                                    <span class="spec-value-compact">1,170</span>
+                                </div>
+                                <div class="spec-item-compact">
+                                    <span class="spec-label-compact">Power:</span>
+                                    <span class="spec-value-compact">455 HP</span>
+                                </div>
+                            </div>
+                            <a href="contact.html?product=PA1170P" class="btn btn-primary" style="width: 100%; text-align: center;">Request Quote</a>
+                        </div>
+                    </div>
+
+                    <!-- PA825V -->
+                    <div class="product-card-compact">
+                        <div class="product-image-compact">
+                            <img src="https://via.placeholder.com/400x300/1a1a1a/c41e3a?text=Bobcat+PA825V" alt="Bobcat PA825V">
+                        </div>
+                        <div class="product-content-compact">
+                            <h3>Bobcat PA825V</h3>
+                            <p>Versatile dual pressure compressor with 825 CFM for maximum jobsite flexibility.</p>
+                            <div class="specs-grid-compact">
+                                <div class="spec-item-compact">
+                                    <span class="spec-label-compact">CFM:</span>
+                                    <span class="spec-value-compact">825/750</span>
+                                </div>
+                                <div class="spec-item-compact">
+                                    <span class="spec-label-compact">PSI:</span>
+                                    <span class="spec-value-compact">125/150</span>
+                                </div>
+                            </div>
+                            <a href="contact.html?product=PA825V" class="btn btn-primary" style="width: 100%; text-align: center;">Request Quote</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CATEGORY 3: SUB-COMPACT TRACTORS -->
+            <div class="category-section" id="tractors">
+                <div class="category-header">
+                    <h2>Sub-Compact Tractors</h2>
+                    <p>Versatile tractors for small farms and property maintenance</p>
+                </div>
+                
+                <div class="products-grid-compact">
+                    <!-- CT1021 -->
+                    <div class="product-card-compact">
+                        <div class="product-image-compact">
+                            <img src="https://via.placeholder.com/400x300/1a1a1a/c41e3a?text=Bobcat+CT1021" alt="Bobcat CT1021">
+                        </div>
+                        <div class="product-content-compact">
+                            <h3>Bobcat CT1021</h3>
+                            <p>21 HP sub-compact tractor with 4WD and hydrostatic transmission. Perfect for small acreage.</p>
+                            <div class="specs-grid-compact">
+                                <div class="spec-item-compact">
+                                    <span class="spec-label-compact">Power:</span>
+                                    <span class="spec-value-compact">21 HP</span>
+                                </div>
+                                <div class="spec-item-compact">
+                                    <span class="spec-label-compact">Drive:</span>
+                                    <span class="spec-value-compact">4WD</span>
+                                </div>
+                            </div>
+                            <a href="contact.html?product=CT1021" class="btn btn-primary" style="width: 100%; text-align: center;">Request Quote</a>
+                        </div>
+                    </div>
+
+                    <!-- CT1025 -->
+                    <div class="product-card-compact">
+                        <div class="product-image-compact">
+                            <img src="https://via.placeholder.com/400x300/1a1a1a/c41e3a?text=Bobcat+CT1025" alt="Bobcat CT1025">
+                        </div>
+                        <div class="product-content-compact">
+                            <h3>Bobcat CT1025</h3>
+                            <p>25 HP diesel tractor with power steering. Ideal for mowing, hauling, and light-duty work.</p>
+                            <div class="specs-grid-compact">
+                                <div class="spec-item-compact">
+                                    <span class="spec-label-compact">Power:</span>
+                                    <span class="spec-value-compact">25 HP</span>
+                                </div>
+                                <div class="spec-item-compact">
+                                    <span class="spec-label-compact">Lift:</span>
+                                    <span class="spec-value-compact">702 lbs</span>
+                                </div>
+                            </div>
+                            <a href="contact.html?product=CT1025" class="btn btn-primary" style="width: 100%; text-align: center;">Request Quote</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CATEGORY 4: COMPACT EXCAVATORS -->
+            <div class="category-section" id="excavators">
+                <div class="category-header">
+                    <h2>Compact (Mini) Excavators</h2>
+                    <p>Precision digging machines for construction and utility work</p>
+                </div>
+                
+                <div class="products-grid-compact">
+                    <!-- E20 -->
+                    <div class="product-card-compact">
+                        <div class="product-image-compact">
+                            <img src="https://via.placeholder.com/400x300/1a1a1a/c41e3a?text=Bobcat+E20" alt="Bobcat E20">
+                        </div>
+                        <div class="product-content-compact">
+                            <h3>Bobcat E20</h3>
+                            <p>Ultra-compact 2-ton excavator perfect for tight spaces and residential projects.</p>
+                            <div class="specs-grid-compact">
+                                <div class="spec-item-compact">
+                                    <span class="spec-label-compact">Weight:</span>
+                                    <span class="spec-value-compact">4,400 lbs</span>
+                                </div>
+                                <div class="spec-item-compact">
+                                    <span class="spec-label-compact">Type:</span>
+                                    <span class="spec-value-compact">Zero Tail</span>
+                                </div>
+                            </div>
+                            <a href="contact.html?product=E20" class="btn btn-primary" style="width: 100%; text-align: center;">Request Quote</a>
+                        </div>
+                    </div>
+
+                    <!-- E35 -->
+                    <div class="product-card-compact">
+                        <div class="product-image-compact">
+                            <img src="https://via.placeholder.com/400x300/1a1a1a/c41e3a?text=Bobcat+E35" alt="Bobcat E35">
+                        </div>
+                        <div class="product-content-compact">
+                            <h3>Bobcat E35</h3>
+                            <p>Popular 3-ton excavator with 25 HP or 33 HP options. Zero tail swing design.</p>
+                            <div class="specs-grid-compact">
+                                <div class="spec-item-compact">
+                                    <span class="spec-label-compact">Power:</span>
+                                    <span class="spec-value-compact">25/33 HP</span>
+                                </div>
+                                <div class="spec-item-compact">
+                                    <span class="spec-label-compact">Dig Force:</span>
+                                    <span class="spec-value-compact">6,968 lbs</span>
+                                </div>
+                            </div>
+                            <a href="contact.html?product=E35" class="btn btn-primary" style="width: 100%; text-align: center;">Request Quote</a>
+                        </div>
+                    </div>
+
+                    <!-- E48 -->
+                    <div class="product-card-compact">
+                        <div class="product-image-compact">
+                            <img src="https://via.placeholder.com/400x300/1a1a1a/c41e3a?text=Bobcat+E48" alt="Bobcat E48">
+                        </div>
+                        <div class="product-content-compact">
+                            <h3>Bobcat E48</h3>
+                            <p>Versatile 4-ton excavator with superior breakout force and compact design.</p>
+                            <div class="specs-grid-compact">
+                                <div class="spec-item-compact">
+                                    <span class="spec-label-compact">Weight:</span>
+                                    <span class="spec-value-compact">10,700 lbs</span>
+                                </div>
+                                <div class="spec-item-compact">
+                                    <span class="spec-label-compact">Class:</span>
+                                    <span class="spec-value-compact">4-ton</span>
+                                </div>
+                            </div>
+                            <a href="contact.html?product=E48" class="btn btn-primary" style="width: 100%; text-align: center;">Request Quote</a>
+                        </div>
+                    </div>
+
+                    <!-- E60 -->
+                    <div class="product-card-compact">
+                        <div class="product-image-compact">
+                            <img src="https://via.placeholder.com/400x300/1a1a1a/c41e3a?text=Bobcat+E60" alt="Bobcat E60">
+                        </div>
+                        <div class="product-content-compact">
+                            <h3>Bobcat E60</h3>
+                            <p>Powerful 6-ton excavator with unmatched comfort and productivity features.</p>
+                            <div class="specs-grid-compact">
+                                <div class="spec-item-compact">
+                                    <span class="spec-label-compact">Weight:</span>
+                                    <span class="spec-value-compact">13,300 lbs</span>
+                                </div>
+                                <div class="spec-item-compact">
+                                    <span class="spec-label-compact">Dig Force:</span>
+                                    <span class="spec-value-compact">9,601 lbs</span>
+                                </div>
+                            </div>
+                            <a href="contact.html?product=E60" class="btn btn-primary" style="width: 100%; text-align: center;">Request Quote</a>
+                        </div>
+                    </div>
+
+                    <!-- E88 -->
+                    <div class="product-card-compact">
+                        <div class="product-image-compact">
+                            <img src="https://via.placeholder.com/400x300/1a1a1a/c41e3a?text=Bobcat+E88" alt="Bobcat E88">
+                        </div>
+                        <div class="product-content-compact">
+                            <h3>Bobcat E88</h3>
+                            <p>Premium 8-ton excavator with peak lift capacity and precision controls.</p>
+                            <div class="specs-grid-compact">
+                                <div class="spec-item-compact">
+                                    <span class="spec-label-compact">Weight:</span>
+                                    <span class="spec-value-compact">19,400 lbs</span>
+                                </div>
+                                <div class="spec-item-compact">
+                                    <span class="spec-label-compact">Class:</span>
+                                    <span class="spec-value-compact">8-ton</span>
+                                </div>
+                            </div>
+                            <a href="contact.html?product=E88" class="btn btn-primary" style="width: 100%; text-align: center;">Request Quote</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CATEGORY 5: ZERO-TURN MOWERS -->
+            <div class="category-section" id="mowers">
+                <div class="category-header">
+                    <h2>Zero-Turn Mowers</h2>
+                    <p>Professional-grade mowers for efficient lawn maintenance</p>
+                </div>
+                
+                <div class="products-grid-compact">
+                    <!-- ZT2000 -->
+                    <div class="product-card-compact">
+                        <div class="product-image-compact">
+                            <img src="https://via.placeholder.com/400x300/1a1a1a/c41e3a?text=Bobcat+ZT2000" alt="Bobcat ZT2000">
+                        </div>
+                        <div class="product-content-compact">
+                            <h3>Bobcat ZT2000</h3>
+                            <p>Entry-level commercial zero-turn with Kawasaki engine. 42", 48", or 52" deck options.</p>
+                            <div class="specs-grid-compact">
+                                <div class="spec-item-compact">
+                                    <span class="spec-label-compact">Power:</span>
+                                    <span class="spec-value-compact">21.5 HP</span>
+                                </div>
+                                <div class="spec-item-compact">
+                                    <span class="spec-label-compact">Speed:</span>
+                                    <span class="spec-value-compact">7 mph</span>
+                                </div>
+                            </div>
+                            <a href="contact.html?product=ZT2000" class="btn btn-primary" style="width: 100%; text-align: center;">Request Quote</a>
+                        </div>
+                    </div>
+
+                    <!-- ZT3000 -->
+                    <div class="product-card-compact">
+                        <div class="product-image-compact">
+                            <img src="https://via.placeholder.com/400x300/1a1a1a/c41e3a?text=Bobcat+ZT3000" alt="Bobcat ZT3000">
+                        </div>
+                        <div class="product-content-compact">
+                            <h3>Bobcat ZT3000</h3>
+                            <p>Commercial-grade mower with 23 HP Kawasaki FT engine. 48", 52", or 61" deck sizes.</p>
+                            <div class="specs-grid-compact">
+                                <div class="spec-item-compact">
+                                    <span class="spec-label-compact">Power:</span>
+                                    <span class="spec-value-compact">23 HP</span>
+                                </div>
+                                <div class="spec-item-compact">
+                                    <span class="spec-label-compact">Fuel:</span>
+                                    <span class="spec-value-compact">3.8 gal</span>
+                                </div>
+                            </div>
+                            <a href="contact.html?product=ZT3000" class="btn btn-primary" style="width: 100%; text-align: center;">Request Quote</a>
+                        </div>
+                    </div>
+
+                    <!-- ZT3500 -->
+                    <div class="product-card-compact">
+                        <div class="product-image-compact">
+                            <img src="https://via.placeholder.com/400x300/1a1a1a/c41e3a?text=Bobcat+ZT3500" alt="Bobcat ZT3500">
+                        </div>
+                        <div class="product-content-compact">
+                            <h3>Bobcat ZT3500</h3>
+                            <p>Premium mower with 24 HP engine and dual fuel tanks. 48", 52", or 61" deck options.</p>
+                            <div class="specs-grid-compact">
+                                <div class="spec-item-compact">
+                                    <span class="spec-label-compact">Power:</span>
+                                    <span class="spec-value-compact">24 HP</span>
+                                </div>
+                                <div class="spec-item-compact">
+                                    <span class="spec-label-compact">Speed:</span>
+                                    <span class="spec-value-compact">10 mph</span>
+                                </div>
+                            </div>
+                            <a href="contact.html?product=ZT3500" class="btn btn-primary" style="width: 100%; text-align: center;">Request Quote</a>
+                        </div>
+                    </div>
+
+                    <!-- ZT5000 -->
+                    <div class="product-card-compact">
+                        <div class="product-image-compact">
+                            <img src="https://via.placeholder.com/400x300/1a1a1a/c41e3a?text=Bobcat+ZT5000" alt="Bobcat ZT5000">
+                        </div>
+                        <div class="product-content-compact">
+                            <h3>Bobcat ZT5000</h3>
+                            <p>Professional landscaper mower with 23.5 HP Kawasaki FX and AirFX cutting deck.</p>
+                            <div class="specs-grid-compact">
+                                <div class="spec-item-compact">
+                                    <span class="spec-label-compact">Power:</span>
+                                    <span class="spec-value-compact">23.5 HP</span>
+                                </div>
+                                <div class="spec-item-compact">
+                                    <span class="spec-label-compact">Speed:</span>
+                                    <span class="spec-value-compact">11 mph</span>
+                                </div>
+                            </div>
+                            <a href="contact.html?product=ZT5000" class="btn btn-primary" style="width: 100%; text-align: center;">Request Quote</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Need Help Choosing?</h2>
+                <p>Our equipment specialists are ready to help you find the perfect machine for your needs</p>
+                <a href="contact.html" class="btn btn-light">Contact an Expert</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="logo.png" alt="IL Heavy Group">
+                    </div>
+                    <p>Your premier source for quality Bobcat compact track loaders and construction equipment.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="catalog.html">Catalog</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><strong>IL HEAVY GROUP LLC</strong></li>
+                        <li>4731 Saint Joseph Creek Rd</li>
+                        <li>Lisle, IL 60532</li>
+                        <li>Tel: (217) 803-0144</li>
+                        <li>Email: info@ilheavygroup.com</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Use</a></li>
+                        <li><a href="cookies.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 IL Heavy Group LLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

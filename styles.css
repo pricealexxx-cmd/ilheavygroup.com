@@ -165,14 +165,16 @@ body {
 }
 
 .btn-secondary {
-    background: transparent;
+    background: var(--primary-color);
     color: white;
-    border-color: white;
+    border-color: var(--primary-color);
 }
 
 .btn-secondary:hover {
-    background: white;
-    color: var(--secondary-color);
+    background: #a01729;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(196,30,58,0.3);
 }
 
 .btn-light {

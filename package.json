@@ -1,0 +1,39 @@
+{
+  "name": "ilheavygroup-website",
+  "version": "1.0.0",
+  "description": "IL Heavy Group LLC - Premium Bobcat Equipment Dealer Website",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server . -p 8080 -o",
+    "dev": "npx live-server --port=8080 --open=index.html",
+    "build": "echo 'No build needed - static site'",
+    "deploy": "echo 'Ready to deploy to Netlify/Cloudflare Pages'"
+  },
+  "keywords": [
+    "bobcat",
+    "heavy-equipment",
+    "construction",
+    "loaders",
+    "excavators",
+    "tractors",
+    "air-compressors",
+    "mowers"
+  ],
+  "author": "IL Heavy Group LLC",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ilheavygroup/website.git"
+  },
+  "homepage": "https://ilheavygroup.com",
+  "devDependencies": {},
+  "dependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

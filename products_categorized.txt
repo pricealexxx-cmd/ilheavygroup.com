@@ -1,0 +1,311 @@
+{
+  "Sub-Compact Tractors": [
+    {
+      "slug": "caterpillar-299d3-2022",
+      "url": "https://johnstractorhouse.com/equipment/2022-caterpillar-299d3-skid-steer/",
+      "title": "2022 CATERPILLAR 299D3 Skid Steer",
+      "price": "$50,300",
+      "year": "",
+      "hours": "",
+      "stock": ""
+    },
+    {
+      "slug": "2021-bobcat-t870-skid-steer-track",
+      "url": "https://johnstractorhouse.com/equipment/2021-bobcat-t870-skid-steer-track/",
+      "title": "2021 Bobcat T870 Skid Steer - Track",
+      "price": "$48,500",
+      "year": "",
+      "hours": "",
+      "stock": ""
+    },
+    {
+      "slug": "2018-caterpillar-320gc",
+      "url": "https://johnstractorhouse.com/equipment/2018-caterpillar-320gc/",
+      "title": "2018 CATERPILLAR 320GC",
+      "price": "$74,700",
+      "year": "2018",
+      "hours": "3",
+      "stock": ""
+    },
+    {
+      "slug": "2019-caterpillar-313flgc",
+      "url": "https://johnstractorhouse.com/equipment/2019-caterpillar-313flgc/",
+      "title": "2019 CATERPILLAR 313FLGC",
+      "price": "$63,100",
+      "year": "",
+      "hours": "",
+      "stock": ""
+    },
+    {
+      "slug": "2018-caterpillar-320",
+      "url": "https://johnstractorhouse.com/equipment/2018-caterpillar-320/",
+      "title": "2018 CATERPILLAR 320",
+      "price": "$80,300",
+      "year": "",
+      "hours": "",
+      "stock": ""
+    },
+    {
+      "slug": "2019-caterpillar-312f",
+      "url": "https://johnstractorhouse.com/equipment/2019-caterpillar-312f/",
+      "title": "2019 CATERPILLAR 312F",
+      "price": "$51,000",
+      "year": "2019",
+      "hours": "2",
+      "stock": ""
+    },
+    {
+      "slug": "2017-caterpillar-excavator-316fl",
+      "url": "https://johnstractorhouse.com/equipment/2017-caterpillar-excavator-316fl/",
+      "title": "2017 CATERPILLAR Excavator 316FL",
+      "price": "$55,400",
+      "year": "2017",
+      "hours": "2",
+      "stock": ""
+    },
+    {
+      "slug": "2021-kubota-u55-5-mini-excavator",
+      "url": "https://johnstractorhouse.com/equipment/2021-kubota-u55-5-mini-excavator/",
+      "title": "2021 Kubota U55-5 Mini Excavator",
+      "price": "$40,500",
+      "year": "2021",
+      "hours": "",
+      "stock": ""
+    },
+    {
+      "slug": "2022-kubota-u50-5-mini-excavator",
+      "url": "https://johnstractorhouse.com/equipment/2022-kubota-u50-5-mini-excavator/",
+      "title": "2022 Kubota U50-5 Mini Excavator",
+      "price": "$35,900",
+      "year": "2022",
+      "hours": "616",
+      "stock": ""
+    },
+    {
+      "slug": "2021-kubota-u48-5-mini-excavator",
+      "url": "https://johnstractorhouse.com/equipment/2021-kubota-u48-5-mini-excavator/",
+      "title": "2021 Kubota U48-5 Mini Excavator",
+      "price": "$43,600",
+      "year": "",
+      "hours": "",
+      "stock": ""
+    },
+    {
+      "slug": "2022-kubota-kx-040-4-mini-excavator",
+      "url": "https://johnstractorhouse.com/equipment/2022-kubota-kx-040-4-mini-excavator/",
+      "title": "2022 Kubota KX 040-4 Mini Excavator",
+      "price": "$40,300",
+      "year": "",
+      "hours": "",
+      "stock": ""
+    },
+    {
+      "slug": "2024-bobcat-t86-compact-track-loader",
+      "url": "https://johnstractorhouse.com/equipment/2024-bobcat-t86-compact-track-loader/",
+      "title": "2024 Bobcat T86 Compact Track Loader",
+      "price": "$47,100",
+      "year": "",
+      "hours": "",
+      "stock": ""
+    },
+    {
+      "slug": "2024-kubota-svl97-2hfc-compact-track-loader",
+      "url": "https://johnstractorhouse.com/equipment/2024-kubota-svl97-2hfc-compact-track-loader/",
+      "title": "2024 Kubota SVL97-2HFC Compact Track Loader",
+      "price": "$44,900",
+      "year": "",
+      "hours": "",
+      "stock": ""
+    },
+    {
+      "slug": "2024-kubota-svl97-2-compact-track-loader",
+      "url": "https://johnstractorhouse.com/equipment/2024-kubota-svl97-2-compact-track-loader/",
+      "title": "2024 Kubota SVL97-2 Compact Track Loader",
+      "price": "$41,800",
+      "year": "",
+      "hours": "",
+      "stock": ""
+    },
+    {
+      "slug": "2020-kubota-svl95-2shfc-compact-track-loader",
+      "url": "https://johnstractorhouse.com/equipment/2020-kubota-svl95-2shfc-compact-track-loader/",
+      "title": "2020 Kubota SVL95-2SHFC Compact Track Loader",
+      "price": "$35,100",
+      "year": "",
+      "hours": "",
+      "stock": ""
+    },
+    {
+      "slug": "2022-caterpillar-259d3-skid-steer-loader",
+      "url": "https://johnstractorhouse.com/equipment/2022-caterpillar-259d3-skid-steer-loader/",
+      "title": "2022 Caterpillar 259D3 Skid Steer Loader",
+      "price": "$46,500",
+      "year": "",
+      "hours": "",
+      "stock": ""
+    },
+    {
+      "slug": "deere-331g-skid-steer-track",
+      "url": "https://johnstractorhouse.com/equipment/deere-331g-skid-steer-track/",
+      "title": "DEERE 331G Skid Steer - Track.",
+      "price": "$44,900",
+      "year": "",
+      "hours": "745",
+      "stock": ""
+    },
+    {
+      "slug": "2022-caterpillar-skid-steer-259d3",
+      "url": "https://johnstractorhouse.com/equipment/2022-caterpillar-skid-steer-259d3/",
+      "title": "2022 CATERPILLAR Skid Steer 259D3",
+      "price": "$48,500",
+      "year": "2022",
+      "hours": "17",
+      "stock": ""
+    },
+    {
+      "slug": "2019-kubota-svl75-2-skid-steer",
+      "url": "https://johnstractorhouse.com/equipment/2019-kubota-svl75-2-skid-steer/",
+      "title": "2019 KUBOTA, SVL75-2 Skid Steer",
+      "price": "$38,500",
+      "year": "2019",
+      "hours": "",
+      "stock": ""
+    },
+    {
+      "slug": "2023-bobcat-t770-track-skid-steer",
+      "url": "https://johnstractorhouse.com/equipment/2023-bobcat-t770-track-skid-steer/",
+      "title": "2023 Bobcat T770 Track Skid Steer",
+      "price": "$41,000",
+      "year": "",
+      "hours": "",
+      "stock": ""
+    }
+  ],
+  "Backhoes": [
+    {
+      "slug": "2018-caterpillar-420f2-backhoe",
+      "url": "https://johnstractorhouse.com/equipment/2018-caterpillar-420f2-backhoe/",
+      "title": "2018 Caterpillar 420F2 Backhoe",
+      "price": "$50,000",
+      "year": "",
+      "hours": "",
+      "stock": ""
+    },
+    {
+      "slug": "2015-caterpillar-backhoe-loader-420f2-it",
+      "url": "https://johnstractorhouse.com/equipment/2015-caterpillar-backhoe-loader-420f2-it/",
+      "title": "2015 CATERPILLAR 420F2 IT Backhoe Loader",
+      "price": "$45,200",
+      "year": "2015",
+      "hours": "",
+      "stock": ""
+    },
+    {
+      "slug": "2016-caterpillar-backhoe-loader-420f2-it",
+      "url": "https://johnstractorhouse.com/equipment/2016-caterpillar-backhoe-loader-420f2-it/",
+      "title": "2016 CATERPILLAR Backhoe Loader 420F2 IT",
+      "price": "Contact for Price",
+      "year": "2016",
+      "hours": "2220",
+      "stock": ""
+    },
+    {
+      "slug": "2024-john-deere-310-p-tier-4x4-backhoe-loader",
+      "url": "https://johnstractorhouse.com/equipment/2024-john-deere-310-p-tier-4x4-backhoe-loader/",
+      "title": "2024 John Deere 310 P-Tier 4&#215;4 Backhoe Loader",
+      "price": "Contact for Price",
+      "year": "",
+      "hours": "",
+      "stock": ""
+    }
+  ],
+  "Motor Graders": [
+    {
+      "slug": "2023-john-deere-770gp-motor-grader",
+      "url": "https://johnstractorhouse.com/equipment/2023-john-deere-770gp-motor-grader/",
+      "title": "2023 John Deere 770GP Motor Grader",
+      "price": "$197,000",
+      "year": "",
+      "hours": "",
+      "stock": ""
+    }
+  ],
+  "Row Crop Tractors": [
+    {
+      "slug": "2019-john-deere-8245r-tractor",
+      "url": "https://johnstractorhouse.com/equipment/2019-john-deere-8245r-tractor/",
+      "title": "2019 John Deere 8245R Tractor",
+      "price": "$91,800",
+      "year": "",
+      "hours": "",
+      "stock": ""
+    }
+  ],
+  "Telehandlers": [
+    {
+      "slug": "2019-caterpillar-tl1255d-telehandler",
+      "url": "https://johnstractorhouse.com/equipment/2019-caterpillar-tl1255d-telehandler/",
+      "title": "2019 Caterpillar TL1255D Telehandler",
+      "price": "$50,000",
+      "year": "",
+      "hours": "",
+      "stock": ""
+    },
+    {
+      "slug": "2022-jlg-925-telehandler",
+      "url": "https://johnstractorhouse.com/equipment/2022-jlg-925-telehandler/",
+      "title": "2022 JLG 925 Telehandler",
+      "price": "$51,400",
+      "year": "",
+      "hours": "",
+      "stock": ""
+    },
+    {
+      "slug": "2023-jcb-510-56-telehandler-2",
+      "url": "https://johnstractorhouse.com/equipment/2023-jcb-510-56-telehandler-2/",
+      "title": "2023 JCB 510-56 Telehandler",
+      "price": "$49,500",
+      "year": "",
+      "hours": "",
+      "stock": ""
+    },
+    {
+      "slug": "2023-caterpillar-tl1055-telehandler",
+      "url": "https://johnstractorhouse.com/equipment/2023-caterpillar-tl1055-telehandler/",
+      "title": "2023 Caterpillar TL1055 Telehandler",
+      "price": "$70,500",
+      "year": "",
+      "hours": "",
+      "stock": ""
+    }
+  ],
+  "Dump Trucks": [
+    {
+      "slug": "2022-kenworth-t880-quad-axle-dump-truck",
+      "url": "https://johnstractorhouse.com/equipment/2022-kenworth-t880-quad-axle-dump-truck/",
+      "title": "2022 Kenworth T880 Quad Axle Dump Truck",
+      "price": "$101,100",
+      "year": "",
+      "hours": "",
+      "stock": ""
+    },
+    {
+      "slug": "2020-peterbilt-389-tri-axle-dump-truck",
+      "url": "https://johnstractorhouse.com/equipment/2020-peterbilt-389-tri-axle-dump-truck/",
+      "title": "2020 Peterbilt 389 Tri-Axle Dump Truck",
+      "price": "$62,600",
+      "year": "",
+      "hours": "",
+      "stock": ""
+    },
+    {
+      "slug": "2019-peterbilt-389-tri-axle-dump-truck",
+      "url": "https://johnstractorhouse.com/equipment/2019-peterbilt-389-tri-axle-dump-truck/",
+      "title": "2019 Peterbilt 389 Tri-Axle Dump Truck",
+      "price": "$74,200",
+      "year": "",
+      "hours": "",
+      "stock": ""
+    }
+  ]
+}

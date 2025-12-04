@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2020 John Deere 6175R Tractor - IL Heavy Group</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .product-detail-hero {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            padding: 4rem 0 2rem;
+            color: white;
+        }
+        .product-detail-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin: 3rem 0;
+        }
+        .product-image-large {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        .product-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .product-gallery img {
+            width: 100%;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .product-gallery img:hover {
+            transform: scale(1.05);
+        }
+        .product-info h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+        .price-badge {
+            background: var(--primary-color);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            font-size: 1.8rem;
+            font-weight: 700;
+            display: inline-block;
+            margin: 1rem 0;
+        }
+        .info-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+        .info-badge {
+            background: #f0f0f0;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            color: var(--secondary-color);
+        }
+        .specs-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .specs-table th, .specs-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .specs-table th {
+            background: #f5f5f5;
+            font-weight: 600;
+            color: var(--secondary-color);
+        }
+        .specs-table td:first-child {
+            font-weight: 600;
+            color: var(--secondary-color);
+            width: 50%;
+        }
+        .specs-table td:last-child {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        .features-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        .feature-item {
+            padding: 1.5rem;
+            background: #f9f9f9;
+            border-left: 4px solid var(--primary-color);
+            border-radius: 5px;
+        }
+        .feature-item h4 {
+            color: var(--secondary-color);
+            margin-bottom: 0.5rem;
+        }
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+        .condition-badge {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            font-weight: 600;
+            margin: 0.5rem 0;
+        }
+        @media (max-width: 768px) {
+            .product-detail-grid {
+                grid-template-columns: 1fr;
+            }
+            .cta-buttons {
+                flex-direction: column;
+            }
+            .product-gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <a href="index.html"><img src="logo.png" alt="IL Heavy Group"></a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="catalog.html">Catalog</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="product-detail-hero">
+        <div class="container">
+            <nav style="margin-bottom: 1rem;">
+                <a href="index.html" style="color: #999;">Home</a> / 
+                <a href="index.html#products" style="color: #999;">Products</a> / 
+                <span style="color: var(--primary-color);">John Deere 6175R</span>
+            </nav>
+            <h1>2020 John Deere 6175R Tractor</h1>
+            <p style="font-size: 1.2rem; color: #ccc;">Super Clean, Low-Hour Tractor with Premium Features</p>
+            <div class="price-badge">$94,500 USD</div>
+            <div class="info-badges">
+                <span class="info-badge">Year: 2020</span>
+                <span class="info-badge">Hours: 510</span>
+                <span class="info-badge">Stock: ZID-215930</span>
+                <span class="condition-badge">Excellent Condition</span>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding: 3rem 0;">
+        <div class="container">
+            <div class="product-detail-grid">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200&h=800&fit=crop" 
+                         alt="2020 John Deere 6175R Tractor" 
+                         class="product-image-large"
+                         id="mainImage">
+                    <div class="product-gallery">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=300&fit=crop" 
+                             alt="John Deere 6175R View 1"
+                             onclick="changeMainImage(this.src)">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=300&fit=crop" 
+                             alt="John Deere 6175R View 2"
+                             onclick="changeMainImage(this.src)">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=300&fit=crop" 
+                             alt="John Deere 6175R View 3"
+                             onclick="changeMainImage(this.src)">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=300&fit=crop" 
+                             alt="John Deere 6175R View 4"
+                             onclick="changeMainImage(this.src)">
+                    </div>
+                </div>
+
+                <div class="product-info">
+                    <h2 style="color: var(--secondary-color);">Overview</h2>
+                    <p style="line-height: 1.8; color: #555; font-size: 1.05rem;">
+                        This <strong>2020 John Deere 6175R</strong> is a super clean, low-hour tractor equipped with premium features and high-end capability. With only <strong>510 hours</strong>, this machine is in exceptional condition and ready for serious field work.
+                    </p>
+                    
+                    <p style="line-height: 1.8; color: #555; font-size: 1.05rem; margin-top: 1rem;">
+                        This 6175R is very clean, tight, and well cared for. Mechanically excellent and cosmetically sharp — a truly <strong>super nice tractor</strong> that's field-ready and built for demanding operations.
+                    </p>
+                    
+                    <div class="cta-buttons">
+                        <a href="contact.html?product=John%20Deere%206175R" class="btn btn-primary">Request Quote</a>
+                        <a href="tel:+12178030144" class="btn btn-primary">Call Now: (217) 803-0144</a>
+                        <a href="index.html#products" class="btn btn-secondary">Back to Products</a>
+                    </div>
+
+                    <h3 style="margin-top: 2rem; color: var(--secondary-color);">Quick Details</h3>
+                    <ul style="line-height: 2; color: #555;">
+                        <li>✓ <strong>Hours:</strong> 510</li>
+                        <li>✓ <strong>Condition:</strong> Excellent</li>
+                        <li>✓ <strong>Transmission:</strong> IVT</li>
+                        <li>✓ <strong>Guidance Ready:</strong> Pre-wired for autosteer systems</li>
+                        <li>✓ <strong>Location:</strong> Available for inspection</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2 style="margin: 3rem 0 1.5rem; color: var(--secondary-color);">Key Features</h2>
+            <div class="features-list">
+                <div class="feature-item">
+                    <h4>John Deere 680R Loader</h4>
+                    <p>Excellent lift capacity and visibility. Smooth, responsive loader controls for maximum productivity.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>3rd Function Hydraulics</h4>
+                    <p>Installed and ready for grapple, bale squeeze, or other hydraulic implements. Versatile attachment capability.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>IVT Transmission</h4>
+                    <p>Ultra-smooth, efficient, and precise transmission for optimal performance in all field conditions.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>Guidance Ready</h4>
+                    <p>Pre-wired for autosteer systems. Ready for precision agriculture technology integration.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>Rear Duals</h4>
+                    <p>Improved traction and flotation for better performance in challenging field conditions.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>Rear Wheel Weights</h4>
+                    <p>Added stability and performance under load. Enhanced weight distribution for maximum efficiency.</p>
+                </div>
+            </div>
+
+            <h2 style="margin: 3rem 0 1.5rem; color: var(--secondary-color);">Technical Specifications</h2>
+            <table class="specs-table">
+                <thead>
+                    <tr>
+                        <th>Specification</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Year</td>
+                        <td>2020</td>
+                    </tr>
+                    <tr>
+                        <td>Model</td>
+                        <td>6175R</td>
+                    </tr>
+                    <tr>
+                        <td>Manufacturer</td>
+                        <td>John Deere</td>
+                    </tr>
+                    <tr>
+                        <td>Usage Hours</td>
+                        <td>510 Hours</td>
+                    </tr>
+                    <tr>
+                        <td>Condition</td>
+                        <td>Excellent / Used</td>
+                    </tr>
+                    <tr>
+                        <td>Transmission</td>
+                        <td>IVT (Infinitely Variable Transmission)</td>
+                    </tr>
+                    <tr>
+                        <td>Guidance System</td>
+                        <td>Guidance Ready (Pre-wired)</td>
+                    </tr>
+                    <tr>
+                        <td>Loader</td>
+                        <td>John Deere 680R Loader</td>
+                    </tr>
+                    <tr>
+                        <td>Hydraulics</td>
+                        <td>3rd Function Installed</td>
+                    </tr>
+                    <tr>
+                        <td>Wheels</td>
+                        <td>Rear Duals with Wheel Weights</td>
+                    </tr>
+                    <tr>
+                        <td>Stock Number</td>
+                        <td>ZID-215930</td>
+                    </tr>
+                    <tr>
+                        <td>Price</td>
+                        <td>$94,500 USD</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2 style="margin: 3rem 0 1.5rem; color: var(--secondary-color);">Loader & Attachments</h2>
+            <div class="features-list">
+                <div class="feature-item">
+                    <h4>John Deere 680R Loader</h4>
+                    <p>Premium loader offering excellent lift capacity and superior visibility. Designed for maximum productivity and operator comfort.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>3rd Function Hydraulics</h4>
+                    <p>Fully installed and operational. Ideal for grapple attachments, bale squeeze, or any other hydraulic implements you need.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>Smooth Controls</h4>
+                    <p>Responsive loader controls provide precise operation for all your material handling needs.</p>
+                </div>
+            </div>
+
+            <h2 style="margin: 3rem 0 1.5rem; color: var(--secondary-color);">Performance & Features</h2>
+            <div style="background: #f9f9f9; padding: 2rem; border-radius: 10px; margin: 2rem 0;">
+                <h3 style="color: var(--secondary-color); margin-bottom: 1rem;">IVT Transmission</h3>
+                <p style="color: #555; line-height: 1.8;">
+                    The Infinitely Variable Transmission (IVT) provides ultra-smooth operation, maximum efficiency, and precise control. Perfect for field work that demands consistent speed and power delivery.
+                </p>
+            </div>
+
+            <div style="background: #f9f9f9; padding: 2rem; border-radius: 10px; margin: 2rem 0;">
+                <h3 style="color: var(--secondary-color); margin-bottom: 1rem;">Guidance Ready</h3>
+                <p style="color: #555; line-height: 1.8;">
+                    This tractor is pre-wired for autosteer systems, making it ready for precision agriculture technology. Connect your preferred guidance system and start maximizing your field efficiency immediately.
+                </p>
+            </div>
+
+            <div style="background: #f9f9f9; padding: 2rem; border-radius: 10px; margin: 2rem 0;">
+                <h3 style="color: var(--secondary-color); margin-bottom: 1rem;">Enhanced Traction</h3>
+                <p style="color: #555; line-height: 1.8;">
+                    Rear duals provide improved traction and flotation, while rear wheel weights add stability and performance under load. This combination ensures optimal performance in all field conditions.
+                </p>
+            </div>
+
+            <div style="text-align: center; margin: 4rem 0; padding: 3rem; background: linear-gradient(135deg, #f9f9f9 0%, #f0f0f0 100%); border-radius: 10px;">
+                <h2 style="color: var(--secondary-color); margin-bottom: 1rem;">Interested in This Machine?</h2>
+                <p style="color: #666; margin-bottom: 1rem; font-size: 1.1rem;">
+                    This super clean, low-hour 2020 John Deere 6175R is in excellent condition and ready for serious field work.
+                </p>
+                <p style="color: #666; margin-bottom: 2rem;">
+                    Contact us for pricing, availability, financing options, and to schedule an inspection.
+                </p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="contact.html?product=John%20Deere%206175R" class="btn btn-primary" style="font-size: 1.2rem; padding: 1rem 3rem;">Get a Quote</a>
+                    <a href="tel:+12178030144" class="btn btn-primary" style="font-size: 1.2rem; padding: 1rem 3rem;">Call: (217) 803-0144</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="logo.png" alt="IL Heavy Group">
+                    </div>
+                    <p>Your premier source for quality equipment.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="catalog.html">Catalog</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><strong>IL HEAVY GROUP LLC</strong></li>
+                        <li>4731 Saint Joseph Creek Rd</li>
+                        <li>Lisle, IL 60532</li>
+                        <li>Tel: (217) 803-0144</li>
+                        <li>Email: info@ilheavygroup.com</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Use</a></li>
+                        <li><a href="cookies.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 IL Heavy Group LLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function changeMainImage(src) {
+            const mainImage = document.getElementById('mainImage');
+            const tempSrc = mainImage.src;
+            mainImage.src = src.replace('w=400&h=300', 'w=1200&h=800');
+        }
+    </script>
+</body>
+</html>
+

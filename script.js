@@ -30,53 +30,93 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Form Submission Handler
+// EmailJS Configuration
+const EMAILJS_PUBLIC_KEY = 'XZm-z0qbBAHBbiduM';
+const EMAILJS_SERVICE_ID = 'service_8bd4u9h';
+const EMAILJS_TEMPLATE_ID = 'template_kgedaps';
+
+// Initialize EmailJS
+function initEmailJS() {
+    if (typeof emailjs !== 'undefined') {
+        emailjs.init(EMAILJS_PUBLIC_KEY);
+    } else {
+        // Retry if EmailJS hasn't loaded yet
+        setTimeout(initEmailJS, 100);
+    }
+}
+
+// Initialize when DOM is ready
+document.addEventListener('DOMContentLoaded', initEmailJS);
+
+// Form Submission Handler with EmailJS
 const contactForm = document.getElementById('contactForm');
 
 if (contactForm) {
     contactForm.addEventListener('submit', async (e) => {
         e.preventDefault();
         
+        // Disable submit button to prevent double submission
+        const submitButton = contactForm.querySelector('button[type="submit"]');
+        const originalButtonText = submitButton.textContent;
+        submitButton.disabled = true;
+        submitButton.textContent = 'Sending...';
+        
         const formData = {
             name: document.getElementById('name').value,
-            company: document.getElementById('company').value,
+            company: document.getElementById('company').value || 'Not provided',
             email: document.getElementById('email').value,
             phone: document.getElementById('phone').value,
-            address: document.getElementById('address').value,
-            city: document.getElementById('city').value,
-            state: document.getElementById('state').value,
             message: document.getElementById('message').value,
             product: document.getElementById('product') ? document.getElementById('product').value : 'General Inquiry'
         };
 
-        // Prepare email body
-        const emailBody = `
-New Contact Form Submission
-----------------------------
-Name: ${formData.name}
-Company: ${formData.company}
-Email: ${formData.email}
-Phone: ${formData.phone}
-Address: ${formData.address}
-City: ${formData.city}
-State: ${formData.state}
-Product Interest: ${formData.product}
+        // Prepare template parameters for EmailJS
+        const templateParams = {
+            from_name: formData.name,
+            from_email: formData.email,
+            from_phone: formData.phone,
+            company: formData.company,
+            product_interest: formData.product,
+            message: formData.message,
+            to_email: 'info@ilheavygroup.com'
+        };
 
-Message:
-${formData.message}
-        `.trim();
-
-        // Create mailto link
-        const mailtoLink = `mailto:info@ilheavygroup.com?subject=New Contact Form Submission from ${formData.name}&body=${encodeURIComponent(emailBody)}`;
-        
-        // Open email client
-        window.location.href = mailtoLink;
-
-        // Show success message
-        showNotification('Thank you! Your message has been sent. We will contact you shortly.', 'success');
-        
-        // Reset form
-        contactForm.reset();
+        try {
+            // Check if EmailJS is initialized
+            if (typeof emailjs === 'undefined') {
+                throw new Error('EmailJS is not loaded. Please check your configuration.');
+            }
+            
+            // Check if configuration is set
+            if (EMAILJS_SERVICE_ID === 'YOUR_SERVICE_ID' || EMAILJS_TEMPLATE_ID === 'YOUR_TEMPLATE_ID' || EMAILJS_PUBLIC_KEY === 'YOUR_PUBLIC_KEY') {
+                throw new Error('EmailJS is not configured. Please set your Service ID, Template ID, and Public Key in script.js');
+            }
+            
+            // Send email using EmailJS
+            await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams);
+            
+            // Show success message
+            showNotification('Thank you! Your message has been sent. We will contact you shortly.', 'success');
+            
+            // Reset form
+            contactForm.reset();
+            
+        } catch (error) {
+            console.error('EmailJS Error:', error);
+            let errorMessage = 'Sorry, there was an error sending your message. ';
+            if (error.text) {
+                errorMessage += error.text;
+            } else if (error.message) {
+                errorMessage += error.message;
+            } else {
+                errorMessage += 'Please try again or contact us directly.';
+            }
+            showNotification(errorMessage, 'error');
+        } finally {
+            // Re-enable submit button
+            submitButton.disabled = false;
+            submitButton.textContent = originalButtonText;
+        }
     });
 }
 

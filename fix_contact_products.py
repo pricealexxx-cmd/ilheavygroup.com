@@ -82,3 +82,7 @@ for cat in category_order:
     if cat in products_by_category:
         print(f"  {cat}: {len(products_by_category[cat])} products")
 
+
+
+
+

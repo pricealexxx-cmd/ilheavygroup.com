@@ -120,3 +120,7 @@ for i, url in enumerate(urls[1:], 2):  # Start from second product
 
 print("\n✓ All products processed!")
 
+
+
+
+

@@ -79,3 +79,7 @@ with open('contact.html', 'w') as f:
 print(f"✓ Updated contact.html with {sum(len(p) for p in products_by_category.values())} products")
 print(f"  Categories: {', '.join(sorted(products_by_category.keys()))}")
 
+
+
+
+

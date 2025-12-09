@@ -93,3 +93,7 @@ with open('catalog.html', 'w') as f:
 
 print(f"\n✓ Updated {len(product_data)} product cards in index.html and catalog.html")
 
+
+
+
+

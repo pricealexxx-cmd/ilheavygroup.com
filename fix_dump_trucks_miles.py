@@ -143,3 +143,7 @@ print("✓ Updated catalog.html")
 
 print("\n✓ All Dump Trucks updated with Miles instead of Hours!")
 
+
+
+
+

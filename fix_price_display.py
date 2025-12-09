@@ -73,3 +73,7 @@ for slug, prices in product_discounts.items():
 
 print("\n✓ All product pages fixed!")
 
+
+
+
+

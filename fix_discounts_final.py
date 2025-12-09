@@ -203,3 +203,7 @@ print(f"\n✓ All products updated!")
 print(f"  - {len(discount_prices)} products WITH discounts (15-20%)")
 print(f"  - {len(bobcat_products)} Bobcat products WITHOUT discounts")
 
+
+
+
+

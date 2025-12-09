@@ -204,3 +204,7 @@ for i, url in enumerate(urls, 1):
 
 print("\n✓ All product pages recreated with correct information!")
 
+
+
+
+

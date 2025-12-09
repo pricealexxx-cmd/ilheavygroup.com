@@ -93,3 +93,7 @@ for cat in category_order:
         if products_by_category[cat]:
             print(f"    Example: {products_by_category[cat][0]}")
 
+
+
+
+

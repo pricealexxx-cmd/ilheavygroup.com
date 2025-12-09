@@ -152,3 +152,7 @@ for slug, prices in product_discounts.items():
 print(f"\n✓ All {len(product_discounts)} products (excluding Bobcat) updated with discounts!")
 print("\n✓ Discounts applied successfully!")
 
+
+
+
+

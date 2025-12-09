@@ -217,3 +217,7 @@ with open('index.html', 'w') as f:
 
 print(f"\n✓ All missing products added to index.html!")
 
+
+
+
+

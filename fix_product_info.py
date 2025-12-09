@@ -125,3 +125,7 @@ for url in urls:
 
 print(f"\n✓ Updated {updated_count} product pages")
 
+
+
+
+

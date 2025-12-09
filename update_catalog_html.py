@@ -152,3 +152,7 @@ with open('index.html', 'w') as f:
 print("✓ index.html updated\n")
 print("✓ All done! Products added to catalog and homepage.")
 
+
+
+
+

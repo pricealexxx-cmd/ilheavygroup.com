@@ -49,3 +49,7 @@ done
 
 echo "All products processed!"
 
+
+
+
+

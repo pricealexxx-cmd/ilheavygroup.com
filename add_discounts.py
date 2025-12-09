@@ -154,3 +154,7 @@ for slug, prices in product_discounts.items():
 print(f"\n✓ All {len(product_discounts)} product pages updated!")
 print("\n✓ Discounts applied successfully!")
 
+
+
+
+

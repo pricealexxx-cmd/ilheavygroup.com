@@ -164,3 +164,7 @@ with open('index.html', 'w') as f:
 
 print("\n✓ Categories fixed!")
 
+
+
+
+

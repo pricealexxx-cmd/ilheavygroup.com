@@ -107,3 +107,7 @@ for filename in os.listdir('.'):
 print("\n✓ All prices rounded to nearest $100")
 print("✓ All percentages rounded to whole numbers")
 
+
+
+
+

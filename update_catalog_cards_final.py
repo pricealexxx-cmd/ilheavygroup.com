@@ -97,3 +97,8 @@ print(f"\n✓ Updated {len(product_data)} product cards in index.html and catalo
 
 
 
+
+
+
+
+

@@ -156,3 +156,8 @@ print("✓ All done! Products added to catalog and homepage.")
 
 
 
+
+
+
+
+

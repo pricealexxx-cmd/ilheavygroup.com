@@ -88,3 +88,8 @@ const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';
 - EmailJS имеет бесплатный план с ограничением 200 писем в месяц
 - Для production рекомендуется использовать платный план
 
+
+
+
+
+

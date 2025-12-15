@@ -83,3 +83,8 @@ print(f"  Categories: {', '.join(sorted(products_by_category.keys()))}")
 
 
 
+
+
+
+
+

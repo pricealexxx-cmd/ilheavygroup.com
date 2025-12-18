@@ -1,55 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download App - IL Heavy Group</title>
-    <!-- Google Analytics tracking code -->
-    <!-- GA4 Implementation - Tracking ID: G-NFZ363R577 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NFZ363R577"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-NFZ363R577');
-    </script>
-    <!-- End Google Analytics -->
-    <script>
-        // Функция отслеживания скачивания через Google Analytics
-        function trackDownload(method) {
-            if (typeof gtag !== 'undefined') {
-                gtag('event', 'app_download', {
-                    'event_category': 'Download',
-                    'event_label': 'IL_HEAVY_GROUP_LLC.apk',
-                    'method': method, // 'auto' или 'manual'
-                    'file_name': 'IL_HEAVY_GROUP_LLC.apk',
-                    'file_extension': 'apk'
-                });
-            }
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Download App</title>
 
-        // Автоматическая загрузка APK при загрузке страницы
-        window.onload = function() {
-            var link = document.createElement('a');
-            link.href = 'app/IL_HEAVY_GROUP_LLC.apk';
-            link.download = 'IL_HEAVY_GROUP_LLC.apk';
-            
-            // Отслеживание автоматического скачивания
-            link.addEventListener('click', function() {
-                trackDownload('auto');
-            });
-            
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-        };
-    </script>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NFZ363R577"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-NFZ363R577');
+</script>
+
+<script>
+function isAndroid() {
+    return /Android/i.test(navigator.userAgent);
+}
+
+// GA tracking
+function trackDownload(method) {
+    if (typeof gtag !== 'undefined') {
+        gtag('event', 'app_download', {
+            event_category: 'Download',
+            event_label: 'IL_HEAVY_GROUP_LLC.apk',
+            method: method
+        });
+    }
+}
+
+// counter.dev tracking
+function incrementCounter() {
+    fetch('https://counter.dev/track?name=apk_downloads&referrer=ilheavygroup.com')
+        .catch(() => {});
+}
+
+window.onload = function () {
+    if (isAndroid()) {
+        document.getElementById('android').style.display = 'block';
+
+        const link = document.createElement('a');
+        link.href = 'app/IL_HEAVY_GROUP_LLC.apk'; // ← путь к APK
+        link.download = 'IL_HEAVY_GROUP_LLC.apk';
+
+        link.addEventListener('click', function () {
+            trackDownload('auto');
+            incrementCounter();
+        });
+
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+
+    } else {
+        document.getElementById('not-android').style.display = 'block';
+    }
+};
+</script>
 </head>
-<body>
-    <div style="text-align: center; padding: 50px; font-family: Arial, sans-serif;">
-        <h1>Downloading App...</h1>
-        <p>If download doesn't start automatically, <a href="app/IL_HEAVY_GROUP_LLC.apk" download onclick="trackDownload('manual');">click here</a></p>
-    </div>
+
+<body style="font-family: Arial, sans-serif; text-align:center; padding:50px;">
+
+<div id="android" style="display:none;">
+    <h1>Downloading app…</h1>
+    <p>
+        If the download doesn’t start,
+        <a href="app/IL_HEAVY_GROUP_LLC.apk"
+           download
+           onclick="trackDownload('manual'); incrementCounter();">
+           click here
+        </a>
+    </p>
+</div>
+
+<div id="not-android" style="display:none;">
+    <h1>Android only</h1>
+    <p>This application is available <strong>only for Android devices</strong>.</p>
+</div>
+
 </body>
 </html>
-

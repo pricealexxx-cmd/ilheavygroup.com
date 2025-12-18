@@ -26,6 +26,13 @@ function isAndroid() {
     return /Android/i.test(navigator.userAgent);
 }
 
+// отправка pageview ОБЯЗАТЕЛЬНО
+window.addEventListener('load', function () {
+    if (window.counter) {
+        counter.trackPageview();
+    }
+});
+
 function trackDownload(method) {
     // GA4
     if (typeof gtag !== 'undefined') {
@@ -36,7 +43,7 @@ function trackDownload(method) {
         });
     }
 
-    // counter.dev event
+    // counter.dev Event
     if (window.counter) {
         counter.track('apk_download');
     }

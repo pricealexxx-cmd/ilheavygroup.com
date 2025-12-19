@@ -109,14 +109,19 @@
                 const response = await fetch('/api/download-count');
                 const data = await response.json();
                 
-                if (data.count !== undefined) {
+                if (response.ok && data.count !== undefined) {
                     display.innerHTML = data.count.toLocaleString();
+                } else if (data.error && data.message) {
+                    // Показываем понятное сообщение об ошибке
+                    display.innerHTML = '<span style="color: #fbbf24; font-size: 1rem;">KV not configured</span>';
+                    display.style.fontSize = '1rem';
                 } else {
-                    display.innerHTML = '<span style="color: #fbbf24;">Error</span>';
+                    display.innerHTML = '<span style="color: #fbbf24;">0</span>';
                 }
             } catch (error) {
                 console.error('Error loading count:', error);
-                display.innerHTML = '<span style="color: #f87171;">Error loading</span>';
+                display.innerHTML = '<span style="color: #f87171; font-size: 1rem;">Connection error</span>';
+                display.style.fontSize = '1rem';
             }
         }
 

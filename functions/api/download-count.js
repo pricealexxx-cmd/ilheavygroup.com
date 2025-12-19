@@ -5,6 +5,21 @@ export async function onRequestGet(context) {
   const { env } = context;
   
   try {
+    // Проверяем наличие KV binding
+    if (!env.DOWNLOAD_COUNTER) {
+      return new Response(JSON.stringify({ 
+        error: 'KV namespace not configured',
+        message: 'Please set up DOWNLOAD_COUNTER KV binding in Cloudflare Pages Settings → Functions → KV Namespace Bindings',
+        count: 0
+      }), {
+        status: 503,
+        headers: {
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*',
+        },
+      });
+    }
+    
     // Получаем счетчик из KV
     const count = await env.DOWNLOAD_COUNTER.get('count');
     const currentCount = count ? parseInt(count, 10) : 0;
@@ -16,7 +31,10 @@ export async function onRequestGet(context) {
       },
     });
   } catch (error) {
-    return new Response(JSON.stringify({ error: error.message }), {
+    return new Response(JSON.stringify({ 
+      error: error.message,
+      count: 0
+    }), {
       status: 500,
       headers: {
         'Content-Type': 'application/json',
@@ -30,6 +48,23 @@ export async function onRequestPost(context) {
   const { env } = context;
   
   try {
+    // Проверяем наличие KV binding
+    if (!env.DOWNLOAD_COUNTER) {
+      return new Response(JSON.stringify({ 
+        error: 'KV namespace not configured',
+        message: 'Please set up DOWNLOAD_COUNTER KV binding in Cloudflare Pages Settings → Functions → KV Namespace Bindings',
+        success: false 
+      }), {
+        status: 503,
+        headers: {
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Methods': 'POST, GET, OPTIONS',
+          'Access-Control-Allow-Headers': 'Content-Type',
+        },
+      });
+    }
+    
     // Получаем текущее значение
     const count = await env.DOWNLOAD_COUNTER.get('count');
     const currentCount = count ? parseInt(count, 10) : 0;

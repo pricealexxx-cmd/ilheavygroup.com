@@ -33,7 +33,7 @@ window.addEventListener('load', function () {
     }
 });
 
-function trackDownload(method) {
+async function trackDownload(method) {
     // GA4
     if (typeof gtag !== 'undefined') {
         gtag('event', 'app_download', {
@@ -46,6 +46,19 @@ function trackDownload(method) {
     // counter.dev Event
     if (window.counter) {
         counter.track('apk_download');
+    }
+
+    // Cloudflare Counter API
+    try {
+        await fetch('/api/download-count', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        });
+    } catch (error) {
+        console.error('Error tracking download:', error);
+        // Не блокируем скачивание при ошибке
     }
 }
 

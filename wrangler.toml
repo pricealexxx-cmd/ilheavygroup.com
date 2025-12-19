@@ -1,0 +1,13 @@
+# Cloudflare Workers/Pages Configuration
+name = "ilheavygroup"
+compatibility_date = "2024-01-01"
+
+# KV Namespace для хранения счетчика скачиваний
+# После создания KV в Cloudflare Dashboard, добавьте binding здесь
+# [[kv_namespaces]]
+# binding = "DOWNLOAD_COUNTER"
+# id = "YOUR_KV_NAMESPACE_ID"
+
+# Для Cloudflare Pages переменные окружения настраиваются в Dashboard
+# Settings → Environment variables → Production/Preview
+

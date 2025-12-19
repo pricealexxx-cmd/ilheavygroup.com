@@ -43,6 +43,11 @@
   to = "/app.html"
   status = 200
 
+[[redirects]]
+  from = "/app/count"
+  to = "/app/count.html"
+  status = 200
+
 # 404 page
 [[redirects]]
   from = "/*"

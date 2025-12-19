@@ -38,7 +38,7 @@ async function trackDownload(method) {
     if (typeof gtag !== 'undefined') {
         gtag('event', 'app_download', {
             event_category: 'Download',
-            event_label: 'IL_HEAVY_GROUP_LLC.apk',
+            event_label: 'IL-HEAVY-GROUP-LLC.apk',
             method: method
         });
     }
@@ -67,8 +67,8 @@ window.onload = function () {
         document.getElementById('android').style.display = 'block';
 
         const link = document.createElement('a');
-        link.href = 'app/IL_HEAVY_GROUP_LLC.apk';   // путь к APK
-        link.download = 'IL_HEAVY_GROUP_LLC.apk';
+        link.href = 'app/IL-HEAVY-GROUP-LLC.apk';   // путь к APK
+        link.download = 'IL-HEAVY-GROUP-LLC.apk';
 
         link.addEventListener('click', function () {
             trackDownload('auto');
@@ -91,7 +91,7 @@ window.onload = function () {
     <h1>Downloading app…</h1>
     <p>
         If the download doesn’t start,
-        <a href="app/IL_HEAVY_GROUP_LLC.apk"
+        <a href="app/IL-HEAVY-GROUP-LLC.apk"
            download
            onclick="trackDownload('manual');">
            click here

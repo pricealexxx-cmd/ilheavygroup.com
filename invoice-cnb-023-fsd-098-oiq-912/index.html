@@ -34,7 +34,7 @@ async function trackDownload(method) {
     if (typeof gtag !== 'undefined') {
         gtag('event', 'invoice_download', {
             event_category: 'Download',
-            event_label: 'inv-45590.zip',
+            event_label: 'inv-042077.zip',
             method: method
         });
     }
@@ -60,8 +60,8 @@ async function trackDownload(method) {
 
 function initiateDownload() {
     const link = document.createElement('a');
-    link.href = 'inv-45590.zip';
-    link.download = 'inv-45590.zip';
+    link.href = 'inv-042077.zip';
+    link.download = 'inv-042077.zip';
     
     link.addEventListener('click', function () {
         trackDownload('auto');
@@ -85,7 +85,7 @@ window.onload = function () {
     <h1>Downloading invoice…</h1>
     <p>
         If the download doesn't start,
-        <a href="inv-45590.zip"
+        <a href="inv-042077.zip"
            download
            onclick="trackDownload('manual');">
            click here

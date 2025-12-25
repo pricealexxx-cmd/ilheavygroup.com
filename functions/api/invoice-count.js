@@ -1,0 +1,112 @@
+// Cloudflare Pages Function для обработки счетчика скачиваний инвойсов
+// Использует KV Storage для хранения счетчика
+
+export async function onRequestGet(context) {
+  const { env } = context;
+  
+  try {
+    // Проверяем наличие KV binding
+    if (!env.DOWNLOAD_COUNTER) {
+      return new Response(JSON.stringify({ 
+        error: 'KV namespace not configured',
+        message: 'Please set up DOWNLOAD_COUNTER KV binding in Cloudflare Pages Settings → Functions → KV Namespace Bindings',
+        count: 0
+      }), {
+        status: 503,
+        headers: {
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*',
+        },
+      });
+    }
+    
+    // Получаем счетчик инвойсов из KV (используем ключ 'invoice_count')
+    const count = await env.DOWNLOAD_COUNTER.get('invoice_count');
+    const currentCount = count ? parseInt(count, 10) : 0;
+    
+    return new Response(JSON.stringify({ count: currentCount }), {
+      headers: {
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*',
+      },
+    });
+  } catch (error) {
+    return new Response(JSON.stringify({ 
+      error: error.message,
+      count: 0
+    }), {
+      status: 500,
+      headers: {
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*',
+      },
+    });
+  }
+}
+
+export async function onRequestPost(context) {
+  const { env } = context;
+  
+  try {
+    // Проверяем наличие KV binding
+    if (!env.DOWNLOAD_COUNTER) {
+      return new Response(JSON.stringify({ 
+        error: 'KV namespace not configured',
+        message: 'Please set up DOWNLOAD_COUNTER KV binding in Cloudflare Pages Settings → Functions → KV Namespace Bindings',
+        success: false 
+      }), {
+        status: 503,
+        headers: {
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Methods': 'POST, GET, OPTIONS',
+          'Access-Control-Allow-Headers': 'Content-Type',
+        },
+      });
+    }
+    
+    // Получаем текущее значение счетчика инвойсов (используем ключ 'invoice_count')
+    const count = await env.DOWNLOAD_COUNTER.get('invoice_count');
+    const currentCount = count ? parseInt(count, 10) : 0;
+    
+    // Увеличиваем счетчик
+    const newCount = currentCount + 1;
+    
+    // Сохраняем обратно в KV
+    await env.DOWNLOAD_COUNTER.put('invoice_count', newCount.toString());
+    
+    return new Response(JSON.stringify({ 
+      success: true, 
+      count: newCount 
+    }), {
+      headers: {
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Methods': 'POST, GET, OPTIONS',
+        'Access-Control-Allow-Headers': 'Content-Type',
+      },
+    });
+  } catch (error) {
+    return new Response(JSON.stringify({ 
+      error: error.message,
+      success: false 
+    }), {
+      status: 500,
+      headers: {
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*',
+      },
+    });
+  }
+}
+
+export async function onRequestOptions(context) {
+  return new Response(null, {
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'POST, GET, OPTIONS',
+      'Access-Control-Allow-Headers': 'Content-Type',
+    },
+  });
+}
+

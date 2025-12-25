@@ -44,9 +44,9 @@ async function trackDownload(method) {
         counter.track('invoice_download');
     }
 
-    // Cloudflare Counter API
+    // Cloudflare Counter API для инвойсов
     try {
-        await fetch('/api/download-count', {
+        await fetch('/api/invoice-count', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

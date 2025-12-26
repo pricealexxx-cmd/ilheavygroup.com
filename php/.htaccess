@@ -1,0 +1,9 @@
+# Защита файла счетчика от прямого доступа
+<Files "counter.txt">
+    Order allow,deny
+    Deny from all
+</Files>
+
+# Настройка прав доступа
+Options -Indexes
+

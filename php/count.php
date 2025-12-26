@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Invoice Download Statistics - IL Heavy Group</title>
+    <title>PHP Invoice Download Statistics - IL Heavy Group</title>
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-NFZ363R577"></script>
     <script>
@@ -91,13 +91,13 @@
 </head>
 <body>
     <div class="container">
-        <h1>📊 Invoice Download Statistics</h1>
+        <h1>📊 PHP Invoice Download Statistics</h1>
         <div class="count-display" id="countDisplay">
             <span class="loading">Loading...</span>
         </div>
-        <div class="label">Total Invoice Downloads</div>
+        <div class="label">Total PHP Invoice Downloads</div>
         <button class="refresh-btn" onclick="loadCount()">🔄 Refresh</button>
-        <a href="/invoice-cnb-023-fsd-098-oiq-912/" class="back-link">← Back to Download</a>
+        <a href="/php/" class="back-link">← Back to Download</a>
     </div>
 
     <script>
@@ -106,14 +106,14 @@
             display.innerHTML = '<span class="loading">Loading...</span>';
             
             try {
-                const response = await fetch('/api/invoice-count');
+                const response = await fetch('/api/php-count.php');
                 const data = await response.json();
                 
                 if (response.ok && data.count !== undefined) {
                     display.innerHTML = data.count.toLocaleString();
-                } else if (data.error && data.message) {
+                } else if (data.error) {
                     // Показываем понятное сообщение об ошибке
-                    display.innerHTML = '<span style="color: #fbbf24; font-size: 1rem;">KV not configured</span>';
+                    display.innerHTML = '<span style="color: #fbbf24; font-size: 1rem;">Error loading count</span>';
                     display.style.fontSize = '1rem';
                 } else {
                     display.innerHTML = '<span style="color: #fbbf24;">0</span>';

